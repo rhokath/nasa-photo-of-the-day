@@ -1,10 +1,11 @@
 import React from "react";
 
-function Card({imgURL, text}){
+function Card({imgURL, text, copyright}){
     return(
         <div>
             <img src={imgURL} alt="nasa img"/>
-            <p>This is my description{text}</p>
+            <p>{'\u00A9'}{copyright}</p>
+            <p>{text}</p>
         </div>
     )
 }
