@@ -1,10 +1,11 @@
 import React from "react";
+import { Button1 } from "./StyledComponents";
 
 function Button(){
     return(
-        <button>
+        <Button1>
             this is my button
-        </button>
+        </Button1>
     )
 }
 

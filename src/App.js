@@ -1,9 +1,16 @@
 import React, { useState, useEffect} from "react";
 import "./App.css";
+import styled from "styled-components";
 import axios from "axios";
 import Title from "./components/Title";
 import Card from "./components/Card";
 import Button from "./components/Button";
+import StyleContainer from "./components/SemanticComponents";
+
+const WrapperDiv = styled.div`
+  width: 100%;
+  height: 100%;
+`;
 
 function App() {
   const [dataState, setDataState] = useState({});
@@ -21,7 +28,7 @@ function App() {
     })
   }, [])
   return (
-    <div className="App">
+    <WrapperDiv>
       <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
@@ -29,7 +36,8 @@ function App() {
       <Title title={dataState.title} date={dataState.date} />
       <Card imgURL={dataState.url} copyright={dataState.copyright} text={dataState.explanation}/>
       <Button />
-    </div>
+      <StyleContainer/>
+    </WrapperDiv>
   );
 }
 
