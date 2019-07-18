@@ -5,7 +5,7 @@ import axios from "axios";
 import Title from "./components/Title";
 import Card from "./components/Card";
 import Button from "./components/Button";
-import StyleContainer from "./components/SemanticComponents";
+
 
 const WrapperDiv = styled.div`
   width: 100%;
@@ -32,7 +32,6 @@ function App() {
       <Title title={dataState.title} date={dataState.date} />
       <Card imgURL={dataState.url} copyright={dataState.copyright} text={dataState.explanation}/>
       <Button />
-      <StyleContainer/>
     </WrapperDiv>
   );
 }

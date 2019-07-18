@@ -5,7 +5,7 @@ import { Grid } from "semantic-ui-react";
 function Card({imgURL, text, copyright}){
     return(
         <Grid>
-            <Grid.Column width={4}>
+            <Grid.Column width={1}>
                 <Img1 src={imgURL} />
             </Grid.Column>
             <Grid.Column width={5}>

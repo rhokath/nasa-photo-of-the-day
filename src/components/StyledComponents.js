@@ -38,8 +38,8 @@ export const Button1 = styled.button`
 `;
 
 export const Img1 = styled.img`
-    padding: 1.5rem;
-    max-width: 90%;
+    padding: 1rem;
+    max-width: 100%;
 
 `;
 
