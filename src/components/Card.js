@@ -1,5 +1,5 @@
 import React from "react";
-import { Paragraph, Img1 } from "./StyledComponents";
+import { Paragraph, Img1, Div } from "./StyledComponents";
 import { Grid } from "semantic-ui-react";
 
 function Card({imgURL, text, copyright}){
@@ -9,7 +9,7 @@ function Card({imgURL, text, copyright}){
                 <Img1 src={imgURL} />
             </Grid.Column>
             <Grid.Column width={5}>
-                <p>{'\u00a9'}{copyright}</p>
+                <Div>{'\u00a9'}{copyright}</Div>
             </Grid.Column>
             <Grid.Column width={3}>
                 <Paragraph>{text}</Paragraph>

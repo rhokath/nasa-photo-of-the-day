@@ -3,18 +3,28 @@ import styled from "styled-components";
 import { Form } from "semantic-ui-react";
 
 
-
+export const Div = styled.div`
+    text-align: center;
+`
 
 export const Header1 = styled.h1`
-    color: red;
+    color: #E27D60;
     font-family: serif;
     text-align: center;
 
 `;
 
+export const Header2 = styled.h2`
+    color: #282828;
+`;
+export const Header3 = styled.h3`
+    color: #4E4e50;
+`;
+
 export const Paragraph = styled.p`
     font-size: 1.2rem;
     padding: 1rem;
+    color: #5D5C61
 
 `;
 
