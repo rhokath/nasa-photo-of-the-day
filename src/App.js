@@ -29,10 +29,6 @@ function App() {
   }, [])
   return (
     <WrapperDiv>
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
       <Title title={dataState.title} date={dataState.date} />
       <Card imgURL={dataState.url} copyright={dataState.copyright} text={dataState.explanation}/>
       <Button />

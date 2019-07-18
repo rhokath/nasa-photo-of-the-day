@@ -1,12 +1,12 @@
 import React from "react";
-import { Header1 }from "./StyledComponents";
+import { Header1, Div, Header2, Header3 }from "./StyledComponents";
 function Title({title, date}){
     return(
-        <div className="title-card">
-           <h2>Daily Dose of NASA</h2>
+        <Div>
+           <Header2>Daily Dose of NASA</Header2>
             <Header1>"{title}"</Header1>
-            <h3>{date}</h3>
-        </div>
+            <Header3>{date}</Header3>
+        </Div>
     )
 }
 
